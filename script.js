@@ -5,3 +5,16 @@ const nav2 = document.getElementById('nav2');
 const nav3 = document.getElementById('nav3');
 const nav4 = document.getElementById('nav4');
 const nav5 = document.getElementById('nav5');
+
+function toggleNav() {
+  // Toggle Menu Bars Open/Close
+  menuBars.classList.toggle('change');
+}
+
+//  Event Listeners
+menuBars.addEventListener('click', toggleNav);
+nav1.addEventListener('click', toggleNav);
+nav2.addEventListener('click', toggleNav);
+nav3.addEventListener('click', toggleNav);
+nav4.addEventListener('click', toggleNav);
+nav5.addEventListener('click', toggleNav);
