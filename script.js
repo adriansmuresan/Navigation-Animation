@@ -13,8 +13,7 @@ function toggleNav() {
   overlay.classList.toggle('overlay-active');
   if (overlay.classList.contains('overlay-active')) {
     // Animate In - Overlay
-    overlay.classList.remove('overlay-slide-left');
-    overlay.classList.add('overlay-slide-right');
+    overlay.classList.replace('overlay-slide-left','overlay-slide-right');
 
     // Animate in nav items
     nav1.classList.remove('slide-out-1')
@@ -29,8 +28,7 @@ function toggleNav() {
     nav5.classList.add('slide-in-5');
   } else {
     //  Animate Out - Overlay
-    overlay.classList.remove('overlay-slide-right');
-    overlay.classList.add('overlay-slide-left');
+    overlay.classList.replace('overlay-slide-right','overlay-slide-left');
 
     // Animate out nav items
     nav1.classList.remove('slide-in-1');
